@@ -1,0 +1,13 @@
+<p>WELCOME TO DASHBOARD!!</p>
+
+<form method="post" action="{% url 'operators:login' %}" > 
+<div>
+    <h2>Vehicle Image:</h2>
+    {% csrf_token %}
+    <input type="file" id="myfile" name="image" accept="image/*" multiple>
+    <span id="alert-p" class="text-danger font-weight-bold"> </span>
+    </div>
+    
+   <br>
+   <input  class="submit"  type="submit" name="submit" value="Submit" />
+</form>
